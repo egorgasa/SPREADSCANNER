@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scrollbar-width: none;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.myContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@layer utilities {
+  .bg-gradient-100 {
+    background: linear-gradient(269.66deg, #00feb5 0.41%, #0d67a2 119.47%);
+  }
+  .bg-gradient-200 {
+    background: linear-gradient(270deg, #3caac5 15.23%, #3592cf 73.41%);
+  }
+}
+.burger__btn {
+  right: 0;
+  top: 35%;
+  display: flex;
+  top: 30%;
+  border: 0;
+  height: 25px;
+  width: 47px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  outline: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.burger__btn--active .burger__btn-lines,
+.burger__btn-lines {
+  position: absolute;
+  width: 47px;
+  border-radius: 4px;
+  height: 4px;
+  top: 50%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.burger__btn-lines {
+  left: 0;
+  background: theme("colors.system.100");
+}
+
+.burger__btn--active .burger__btn-lines:after,
+.burger__btn--active .burger__btn-lines:before,
+.burger__btn-lines:after,
+.burger__btn-lines:before {
+  position: absolute;
+  content: "";
+  width: 47px;
+  height: 4px;
+  background: theme("colors.system.100");
+  border-radius: 4px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.burger__btn-lines:before {
+  left: 0;
+  top: -10px;
+}
+
+.burger__btn-lines:after {
+  left: 0;
+  top: 10px;
+}
+.burger__btn-lines:before {
+  left: 0;
+  top: -10px;
+}
+.burger__btn--active .burger__btn-lines {
+  background: 0 0;
+  right: 0;
+}
+.burger__btn--active .burger__btn-lines:after,
+.burger__btn--active .burger__btn-lines:before {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.burger__btn--active .burger__btn-lines:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav__menu {
+  position: fixed;
+  width: 100%;
+  transform: translateX(105%);
+  top: 64px;
+  height: 100%;
+  left: 0;
+  background: theme("colors.system.800");
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border-top: 1px solid theme("colors.system.100");
+}
+.nav__menu--active {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.markUl {
+  list-style-image: url(./assets/markList.svg);
+}
+
+.question__item-arrow {
+  width: 36px;
+}
+
+.overflowHid {
+  overflow: hidden;
+}

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-system-700">
+    <header class="bg-system-800 sticky top-0">
+      <div class="flex w-full items-center gap-5 py-[13px] px-2.5 md:px-9">
+        <div class="flex flex-grow gap-3 lg:flex-grow-0">
+          <a href="/" class="flex gap-3">
+            <img src="./src/assets/logoMin.svg" alt="Logo" />
+            <p class="text-typography-200 text-base font-extrabold uppercase">
+              SPREAD SCANNER
+            </p>
+          </a>
+        </div>
+        <ul class="hidden flex-1 items-center justify-evenly gap-2.5 lg:flex">
+          <li>
+            <a href="#whatDo" class="text-typography-100 text-sm font-medium"
+              >О продукте</a
+            >
+          </li>
+          <li>
+            <a href="#tariffs" class="text-typography-100 text-sm font-medium"
+              >Тарифы</a
+            >
+          </li>
+          <li>
+            <a
+              href="#aboutTheProduct"
+              class="text-typography-100 text-sm font-medium"
+            >
+              Прибыль на новых токенах
+            </a>
+          </li>
+          <li>
+            <a href="#future" class="text-typography-100 text-sm font-medium">
+              Что в будущем?
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="text-typography-100 text-sm font-medium"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+        <div class="flex flex-row gap-6">
+          <a href="" class="hidden md:flex"
+            ><img
+              src="./src/assets/ru.svg"
+              alt="ru"
+              class="h-9 w-9 rounded-full object-cover md:h-auto md:w-auto md:rounded-none"
+          /></a>
+          <a href="" class="md:flex"
+            ><img
+              src="./src/assets/en.svg"
+              alt="en"
+              class="h-9 w-9 rounded-full object-cover md:h-auto md:w-auto md:rounded-none"
+          /></a>
+        </div>
+        <button class="burger__btn lg:hidden">
+          <span class="burger__btn-lines"></span>
+        </button>
+      </div>
+      <nav class="nav__menu">
+        <ul class="px-5 py-10">
+          <li>
+            <a
+              href="#whatDo"
+              class="text-typography-100 nav_item text-sm font-medium"
+              >О продукте</a
+            >
+          </li>
+          <li>
+            <a
+              href="#tariffs"
+              class="text-typography-100 nav_item text-sm font-medium"
+              >Тарифы</a
+            >
+          </li>
+          <li>
+            <a
+              href="#aboutTheProduct"
+              class="text-typography-100 nav_item text-sm font-medium"
+            >
+              Прибыль на новых токенах
+            </a>
+          </li>
+          <li>
+            <a
+              href="#future"
+              class="text-typography-100 nav_item text-sm font-medium"
+            >
+              Что в будущем?
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-typography-100 nav_item text-sm font-medium"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="scroll-smooth">
+      <section id="aboutTheProduct">
+        <div
+          class="myContainer flex flex-row items-center justify-center gap-2.5 py-5"
+        >
+          <div class="flex flex-col gap-10">
+            <p class="text-typography-100 text-4xl font-semibold lg:text-7xl">
+              Зарабатывай на межбиржевом арбитраже
+            </p>
+            <a
+              class="bg-system-500 hover:bg-system-300 text-typography-400 hidden w-full max-w-[250px] justify-center rounded-[60px] py-5 text-center text-3xl font-semibold transition-[background] duration-300 ease-linear md:flex md:py-[30px] lg:max-w-[430px]"
+              href=""
+              >Начать</a
+            >
+          </div>
+          <div class="hidden md:flex">
+            <img
+              src="./src/assets/logo.svg"
+              alt="Logo"
+              class="h-full w-full lg:max-h-[430px] lg:min-w-[430px]"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="py-5 md:py-10">
+        <div class="myContainer flex flex-col items-center">
+          <ul
+            class="flex w-full flex-col items-center justify-between gap-5 md:flex-row md:items-start"
+          >
+            <li class="flex w-full flex-col gap-1 md:gap-2.5">
+              <p class="text-typography-100 text-2xl font-semibold lg:text-3xl">
+                Поиск
+              </p>
+              <p class="text-typography-100 text-xl font-medium">
+                спрэдов по токенам на CEX/DEX биржах
+              </p>
+            </li>
+            <li class="flex w-full flex-col gap-1 md:gap-2.5">
+              <p class="text-typography-100 text-2xl font-semibold lg:text-3xl">
+                Сигналы
+              </p>
+              <p class="text-typography-100 text-xl font-medium">
+                приходят в Телеграм бот
+              </p>
+            </li>
+            <li class="flex w-full flex-col gap-1 md:gap-2.5">
+              <p class="text-typography-100 text-2xl font-semibold lg:text-3xl">
+                Возможность
+              </p>
+              <p class="text-typography-100 text-xl font-medium">
+                фильтрации по биржам и спрэдам
+              </p>
+            </li>
+          </ul>
+          <a
+            class="bg-system-500 hover:bg-system-300 text-typography-400 mt-10 flex w-full max-w-[250px] justify-center rounded-[60px] py-5 text-center text-3xl font-semibold transition-[background] duration-300 ease-linear md:hidden md:py-[30px] lg:max-w-[430px]"
+            href=""
+            >Начать</a
+          >
+        </div>
+      </section>
+
+      <section class="py-5 md:py-10">
+        <div class="myContainer flex flex-col gap-7">
+          <div
+            class="bg-system-600 question__item w-full cursor-pointer rounded-[40px] px-5 py-6 md:px-16 md:py-6"
+          >
+            <div>
+              <div
+                class="flex items-center justify-between gap-2.5"
+                id="whatDo"
+              >
+                <div
+                  class="text-typography-100 text-xl font-bold md:text-2xl lg:text-3xl"
+                >
+                  Что делает
+                  <span class="text-typography-300">SPREAD SCANNER</span>?
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="36"
+                    viewBox="0 0 18 36"
+                    fill="none"
+                    class="question__item-arrow transition-[transform] duration-300 ease-linear"
+                  >
+                    <path
+                      d="M1.13672 1.50863L17.1367 18.0026L1.13672 34.4965"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="grid-rows-0 question__item-text transition-[grid-template-rows, margin] grid overflow-hidden text-base duration-300 ease-out"
+              >
+                <div class="min-h-0">
+                  <p
+                    class="text-typography-100 text-xl font-medium md:text-3xl"
+                  >
+                    В настоящее время рынок криптовалют насчитывает порядка 3+
+                    млн. токенов, которые торгуются на 100+ централизованных
+                    биржах (СЕХ) и 100+ децентрализованных (DEX). Вследствие
+                    такой вариативности, постоянно возникают перекосы в цене по
+                    одному и тому же токену на разных биржах, что фиксирует
+                    SPREAD SCANNER и выдает сигнал на покупку либо продажу
+                    токена в данный момент времени.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-system-600 question__item w-full cursor-pointer rounded-[40px] px-5 py-6 md:px-16 md:py-6"
+          >
+            <div>
+              <div class="flex items-center justify-between gap-2.5">
+                <div
+                  class="text-typography-100 text-xl font-bold md:text-2xl lg:text-3xl"
+                >
+                  Что мы предлагаем?
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="36"
+                  viewBox="0 0 18 36"
+                  fill="none"
+                  class="question__item-arrow transition-[transform] duration-300 ease-linear"
+                >
+                  <path
+                    d="M1.13672 1.50863L17.1367 18.0026L1.13672 34.4965"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="grid-rows-0 question__item-text transition-[grid-template-rows, margin] grid overflow-hidden text-base duration-300 ease-out"
+              >
+                <div class="min-h-0">
+                  <p
+                    class="text-typography-100 text-xl font-medium md:text-3xl"
+                  >
+                    Приобретя у нас подписку, пользователь будет получать в
+                    режиме 24/7 в Телеграм боте сигналы по спрэдам в реальном
+                    времени, причем бот анализирует токены по объему торгов, и
+                    отсекает токены с незначительными объемами.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-system-600 question__item w-full cursor-pointer rounded-[40px] px-5 py-6 md:px-16 md:py-6"
+          >
+            <div>
+              <div class="flex items-center justify-between gap-2.5">
+                <div
+                  class="text-typography-100 text-xl font-bold md:text-2xl lg:text-3xl"
+                >
+                  Почему именно мы?
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="36"
+                  viewBox="0 0 18 36"
+                  fill="none"
+                  class="question__item-arrow transition-[transform] duration-300 ease-linear"
+                >
+                  <path
+                    d="M1.13672 1.50863L17.1367 18.0026L1.13672 34.4965"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="grid-rows-0 question__item-text transition-[grid-template-rows, margin] grid overflow-hidden text-base duration-300 ease-out"
+              >
+                <div class="min-h-0">
+                  <p
+                    class="text-typography-100 text-xl font-medium md:text-3xl"
+                  >
+                    Наша команда больше года работает с ботом, и выработала
+                    несколько стратегий торговли, чтобы стабильно получать
+                    прибыль, а при покупке сигналов на 3 и 6 месяцев, вы
+                    получите доступ к рекомендациям наших трейдеров и описаниям
+                    различных стратегий арбитража. Более того, мы и дальше
+                    активно развиваем наш продукт, и в будущем будут реализованы
+                    автоматическая торговля, поиск сложных связок и сигналы по
+                    международным и трансграничным связкам.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 md:py-7" id="tariffs">
+        <div
+          class="myContainer flex flex-row flex-wrap gap-2.5 md:flex-nowrap lg:gap-10"
+        >
+          <div
+            class="border-system-100 mt-5 flex flex-col rounded-[51px] border-[5px]"
+          >
+            <div
+              class="bg-gradient-100 flex flex-col items-center justify-center gap-1 rounded-t-[44px] p-5"
+            >
+              <p class="text-typography-400 text-base font-medium">
+                подписка на
+              </p>
+              <p class="text-typography-400 text-3xl font-extrabold">1 месяц</p>
+            </div>
+            <ul class="markUl flex flex-col gap-2 py-4 px-6">
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  получение сигналов в Телеграм боте 24/7
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  анализ и фильтрация криптовалют по объему денег в «стакане»
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  расчет комиссий сетей по переводу и бирж по купле/продаже
+                  криптовалют (условно чистый спрэд)
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  заработок с БОТОМ ЛИСТИНГА НОВЫХ ТОКЕНОВ
+                </p>
+              </li>
+            </ul>
+            <div class="mb-[30px] mt-auto flex justify-center px-5 pt-5">
+              <a
+                class="bg-system-500 hover:bg-system-300 text-typography-400 block w-full max-w-[250px] rounded-[60px] py-5 text-center text-2xl font-semibold transition-[background] duration-300 ease-linear md:py-[30px]"
+                href=""
+                >69 USDT</a
+              >
+            </div>
+          </div>
+          <div
+            class="border-system-100 flex flex-col rounded-[51px] border-[5px]"
+          >
+            <div
+              class="bg-gradient-100 flex flex-col items-center justify-center gap-1 rounded-t-[44px] p-5"
+            >
+              <p class="text-typography-400 text-base font-medium">
+                подписка на
+              </p>
+              <p class="text-typography-400 text-3xl font-extrabold">3 месяц</p>
+            </div>
+            <ul class="markUl flex flex-col gap-2 py-4 px-6">
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  получение сигналов в Телеграм боте 24/7
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  анализ и фильтрация криптовалют по объему денег в «стакане»
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  расчет комиссий сетей по переводу и бирж по купле/продаже
+                  криптовалют (условно чистый спрэд)
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  заработок с БОТОМ ЛИСТИНГА НОВЫХ ТОКЕНОВ
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  доступ к рекомендациям экспертов и описаниям различных
+                  стратегий арбитража
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  бесплатный доступ к обучающему курсу арбитража криптовалют,
+                  стоимостью 1500 USDT
+                </p>
+              </li>
+            </ul>
+            <div class="mb-[30px] mt-auto flex justify-center px-5 pt-5">
+              <a
+                class="bg-system-500 hover:bg-system-300 text-typography-400 block w-full max-w-[250px] rounded-[60px] py-5 text-center text-2xl font-semibold transition-[background] duration-300 ease-linear md:py-[30px]"
+                href=""
+                >139 USDT</a
+              >
+            </div>
+          </div>
+          <div
+            class="border-system-100 mt-5 flex flex-col rounded-[51px] border-[5px]"
+          >
+            <div
+              class="bg-gradient-100 flex flex-col items-center justify-center gap-1 rounded-t-[44px] p-5"
+            >
+              <p class="text-typography-400 text-base font-medium">
+                подписка на
+              </p>
+              <p class="text-typography-400 text-3xl font-extrabold">6 месяц</p>
+            </div>
+            <ul class="markUl flex flex-col gap-2 py-4 px-6">
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  получение сигналов в Телеграм боте 24/7
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  анализ и фильтрация криптовалют по объему денег в «стакане»
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  расчет комиссий сетей по переводу и бирж по купле/продаже
+                  криптовалют (условно чистый спрэд)
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  заработок с БОТОМ ЛИСТИНГА НОВЫХ ТОКЕНОВ
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  доступ к рекомендациям экспертов и описаниям различных
+                  стратегий арбитража
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  бесплатный доступ к обучающему курсу арбитража криптовалют,
+                  стоимостью 1500 USDT
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  техподдержка и консультации наших трейдеров 24/7
+                </p>
+              </li>
+              <li>
+                <p class="text-typography-100 text-base font-medium">
+                  бесплатный доступ к обучающему курсу по прибыльной торговле на
+                  рынке криптовалют, стоимостью 2000 USDT
+                </p>
+              </li>
+            </ul>
+            <div class="mb-[30px] mt-auto flex justify-center px-5 pt-5">
+              <a
+                class="bg-system-500 hover:bg-system-300 text-typography-400 block w-full max-w-[250px] rounded-[60px] py-5 text-center text-2xl font-semibold transition-[background] duration-300 ease-linear md:py-[30px]"
+                href=""
+                >199 USDT</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 md:py-10">
+        <div class="myContainer flex flex-col gap-14" id="'about">
+          <div class="flex flex-col gap-4">
+            <p class="text-typography-100 text-3xl font-extrabold">
+              БОТ ЛИСТИНГА НОВЫХ ТОКЕНОВ
+            </p>
+            <p class="text-typography-100 text-xl font-medium md:text-2xl">
+              выдает сигнал о начале ICO за 24 часа до старта. Так как в
+              основном новые токены вначале быстро растут, бот автоматически
+              открывает по токену ордер, отслеживает его рост, и когда токен
+              начинает падать, продает его, зафиксировав прибыль. Пользователям,
+              купившим подписку на 3 и 6 месяцев, предоставляется бесплатно
+            </p>
+          </div>
+          <div
+            class="bg-system-600 question__item w-full cursor-pointer rounded-[40px] px-5 py-6 md:px-16 md:py-6"
+          >
+            <div>
+              <div
+                class="flex items-center justify-between gap-2.5"
+                id="future"
+              >
+                <div
+                  class="text-typography-100 text-xl font-bold md:text-2xl lg:text-3xl"
+                >
+                  Что в будущем?
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="36"
+                  viewBox="0 0 18 36"
+                  fill="none"
+                  class="question__item-arrow transition-[transform] duration-300 ease-linear"
+                >
+                  <path
+                    d="M1.13672 1.50863L17.1367 18.0026L1.13672 34.4965"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="grid-rows-0 question__item-text transition-[grid-template-rows, margin] grid overflow-hidden text-base duration-300 ease-out"
+              >
+                <div class="min-h-0">
+                  <ul class="markUl">
+                    <li>
+                      <p
+                        class="text-typography-100 text-xl font-medium md:text-3xl"
+                      >
+                        <span class="text-typography-300">SPREAD SCANNER</span>
+                        сможет торговать самостоятельно, после подтверждения
+                        вручную, либо полностью автономно
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="text-typography-100 text-xl font-medium md:text-3xl"
+                      >
+                        <span class="text-typography-300">SPREAD SCANNER</span>
+                        будет сканировать сложные связки (Стейблкоин – Альткоин
+                        1 – Альткоин 2 – Стейблкоин) с выводом результатов
+                        сканирования на альтернативные источники
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        class="text-typography-100 text-xl font-medium md:text-3xl"
+                      >
+                        <span class="text-typography-300">SPREAD SCANNER</span>
+                        будет сканировать платежные системы, обменники и др., и
+                        выдавать сигналы по международным и трансграничным
+                        связкам.
+                      </p>
+                    </li>
+                    <li class="mt-10">
+                      <a
+                        class="bg-system-500 hover:bg-system-300 text-typography-400 block w-full max-w-[250px] rounded-[60px] py-5 text-center text-3xl font-semibold transition-[background] duration-300 ease-linear md:py-[30px]"
+                        href=""
+                        >Начать</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4" id="contact">
+            <p class="text-typography-100 text-3xl font-extrabold">Контакты</p>
+            <p class="text-typography-100 text-xl font-medium md:text-2xl">
+              Для дополнительной информации, пожалуйста, пишите нам, мы ответим
+              вам в кратчайшие сроки.
+            </p>
+          </div>
+          <div
+            class="flex flex-wrap justify-between gap-5 md:flex-nowrap md:gap-10"
+          >
+            <a
+              href=""
+              class="border-system-400 text-typography-100 flex w-full items-center justify-center gap-2.5 rounded-full border-[5px] py-7 px-5 text-center text-base font-medium sm:text-xl md:gap-5 lg:text-3xl"
+              ><img src="./src/assets/mail.svg" alt="telegram" />Отправить
+              письмо</a
+            >
+            <a
+              href=""
+              class="bg-system-400 text-typography-100 flex w-full items-center justify-center gap-2.5 rounded-full py-7 text-center text-base font-medium sm:text-xl md:gap-5 lg:text-3xl"
+              ><img src="./src/assets/tg.svg" alt="telegram" />Написать в
+              телеграм</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-system-800">
+      <div class="myContainer flex flex-col gap-5 py-6">
+        <ul
+          class="mb-5 hidden flex-1 items-center justify-evenly gap-2.5 md:flex lg:gap-5"
+        >
+          <li>
+            <a class="text-typography-100 text-base font-medium" href="#whatDo"
+              >О продукте</a
+            >
+          </li>
+          <li>
+            <a class="text-typography-100 text-base font-medium" href="#tariffs"
+              >Тарифы</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-typography-100 text-base font-medium"
+              href="#aboutTheProduct"
+            >
+              Прибыль на новых токенах
+            </a>
+          </li>
+          <li>
+            <a class="text-typography-100 text-base font-medium" href="#future">
+              Что в будущем?
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="text-typography-100 text-base font-medium"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+        <div class="hidden items-center justify-center gap-6 sm:flex">
+          <p class="text-typography-300 font-extrabold sm:text-4xl lg:text-6xl">
+            SPREAD SCANNER
+          </p>
+          <img
+            src="./src/assets/logo.svg"
+            alt="Logo"
+            class="max-w-[50px] md:max-w-[75px]"
+          />
+        </div>
+        <ul class="flex flex-row justify-evenly gap-5 md:justify-start">
+          <li>
+            <a href=""><img src="./src/assets/tg.svg" alt="telegram" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./src/assets/mail.svg" alt="mail" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./src/assets/youtube.svg" alt="youtube" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./src/assets/twitter.svg" alt="Twitter" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
